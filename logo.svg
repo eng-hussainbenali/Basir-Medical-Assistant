@@ -1,0 +1,17 @@
+<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" rx="44" fill="#ffffff"/>
+  <g transform="translate(18, 20) scale(0.82)">
+    <!-- Left Pill Half (Navy Blue) -->
+    <path d="M 52 20 A 45 45 0 0 0 7 65 L 7 135 A 45 45 0 0 0 52 180 L 98 180 L 98 20 Z" fill="#0d284d"/>
+    <!-- Right Pill Half (Sky Cyan Blue) -->
+    <path d="M 102 20 L 148 20 A 45 45 0 0 1 193 65 L 193 135 A 45 45 0 0 1 148 180 L 102 180 Z" fill="#56bbf1"/>
+    <!-- Soundwave & ECG Wave -->
+    <path d="M 7 100 L 62 100 C 66 100 68 93 72 93 C 76 93 78 107 82 107 C 85 107 86 100 90 100" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="73" y="86" width="5.5" height="28" rx="2.75" fill="#ffffff"/>
+    <rect x="83" y="72" width="5.5" height="56" rx="2.75" fill="#ffffff"/>
+    <rect x="97.25" y="60" width="5.5" height="80" rx="2.75" fill="#ffffff"/>
+    <rect x="111.5" y="72" width="5.5" height="56" rx="2.75" fill="#ffffff"/>
+    <rect x="121.5" y="86" width="5.5" height="28" rx="2.75" fill="#ffffff"/>
+    <path d="M 110 100 L 128 100 C 132 100 134 94 137 94 C 141 94 144 112 147 112 C 150 112 153 100 156 100 L 193 100" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

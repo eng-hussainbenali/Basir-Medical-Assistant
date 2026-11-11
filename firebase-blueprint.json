@@ -1,0 +1,44 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile document",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email"]
+    },
+    "Medicine": {
+      "title": "Medicine",
+      "description": "Medicine entry in user profile with dosage and reminders",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string", "maxLength": 200 },
+        "dosage": { "type": "string", "maxLength": 100 },
+        "frequency": { "type": "string", "maxLength": 100 },
+        "purpose": { "type": "string", "maxLength": 500 },
+        "warning": { "type": "string", "maxLength": 500 },
+        "reminderTime": { "type": "string", "maxLength": 10 },
+        "reminderEnabled": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "userId"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile information"
+    },
+    "/users/{userId}/medicines/{medicineId}": {
+      "schema": "Medicine",
+      "description": "User medicines and notification reminders"
+    }
+  }
+}

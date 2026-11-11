@@ -1,0 +1,11 @@
+{
+  "name": "Basir (بصير) - Medical Assistant",
+  "description": "An AI-powered medical assistant for the visually impaired, featuring medicine scanning, voice output, interaction checks, and AI health consultation.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
